@@ -19,18 +19,6 @@ import HomeTop from '@/components/home/HomeTop.vue'
         <link rel="stylesheet" class="chakra-link css-spn4bz"
           href="https://fonts.googleapis.com/css2?family=Libre%20Baskerville:wght@400;700&amp;display=swap"
           data-gamma-font="Libre Baskerville">
-        <svg class="css-10n3guf">
-          <defs>
-            <filter id="theme-accent-color-fill">
-              <feFlood flood-color="#B88E23" result="flood"></feFlood>
-              <feComposite in="flood" in2="SourceAlpha" operator="in"></feComposite>
-            </filter>
-            <filter id="theme-body-color-fill">
-              <feFlood flood-color="#454240" result="flood"></feFlood>
-              <feComposite in="flood" in2="SourceAlpha" operator="in"></feComposite>
-            </filter>
-          </defs>
-        </svg>
         <div class="css-11w65sc">
           <div class="doc-content-wrapper css-no7w9x">
             <div data-doc-background-element="true" contenteditable="false" class="css-1m99umk">
