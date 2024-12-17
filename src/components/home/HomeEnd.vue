@@ -1,239 +1,64 @@
+<script setup lang="ts">
+import CardInnerFrame from '@/commons/frame/CardInnerFrame.vue'
+</script>
 <template>
-  <div class="react-renderer node-card block block-card last-block">
-    <div style="white-space:normal;min-height:0" data-node-view-wrapper="">
-      <div class="card-wrapper card-expanded css-zfp3b4">
-        <div class="card-body css-hblaxo">
-          <div class="card-body-background css-jtdbhb"></div>
-          <div class="card-layout css-1isnbfg">
-            <div class="chakra-stack css-15maf5o">
-              <div class="css-17xejub"></div>
-              <div class="css-17xejub"></div>
-            </div>
-            <div class="card-content is-full-width is-borderless" data-node-view-content="">
-              <div data-node-view-content-inner="card">
-                <div class="react-renderer node-cardLayoutItem" data-layout-item-id="body">
-                  <div data-node-view-wrapper="">
-                    <div class="card-layout-cell-bg css-1jw19ud">
-                      <div style="white-space:pre-wrap;width:100%" data-node-view-content="">
-                        <div data-node-view-content-inner="cardLayoutItem">
-                          <div
-                            class="react-renderer node-heading animatable-on-load animatable-on-load-annotatable block block-heading first-block first-block-in-card animate-has-animated">
-                            <div
-                              style="white-space:normal;display:flex;flex-direction:column;align-items:var(--flex-align)"
-                              data-node-view-wrapper="">
-                              <div level="1" data-placeholder="Untitled card" class="heading themed-heading"
-                                style="white-space:pre-wrap;min-width:min(100%, 10em)" data-node-view-content="">
-                                <div data-node-view-content-inner="heading">今すぐ始めよう！</div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="react-renderer node-smartLayout animatable-on-load-content-parent block block-smartLayout last-block animate-has-animated">
-                            <div style="white-space:normal;position:relative;display:grid;grid-template-columns:100%"
-                              data-node-view-wrapper="">
-                              <div class="css-mscysw">
-                                <div data-node-view-content-outer="smartLayout" data-node-view-content="">
-                                  <div data-node-view-content-inner="smartLayout">
-                                    <div
-                                      class="react-renderer node-smartLayoutCell animatable-on-load-content-child animate-has-animated">
-                                      <div data-node-view-wrapper="">
-                                        <div class=" css-1doss8g">
-                                          <div class="css-1katrfu">
-                                            <div class="css-1d2qp1f">
-                                              <div class="css-10ul88n">
-                                                <div class="themed-html-shape-background css-iz3jdz">
-                                                  <p class="chakra-text themed-heading css-14ogru3"
-                                                    style="line-height:1"></p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="themed-shape-outside-text css-twszz0">
-                                              <div style="white-space:pre-wrap;max-width:100%;word-break:break-word"
-                                                data-node-view-content="">
-                                                <div data-node-view-content-inner="smartLayoutCell">
-                                                  <div
-                                                    class="react-renderer node-heading block block-heading first-block">
-                                                    <div
-                                                      style="white-space:normal;display:flex;flex-direction:column;align-items:var(--flex-align)"
-                                                      data-node-view-wrapper="">
-                                                      <div level="4" data-placeholder="Heading 4"
-                                                        class="heading themed-heading"
-                                                        style="white-space:pre-wrap;min-width:min(100%, 10em)"
-                                                        data-node-view-content="">
-                                                        <div data-node-view-content-inner="heading">無料登録</div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div
-                                                    class="react-renderer node-paragraph block block-paragraph last-block">
-                                                    <div data-node-view-wrapper="">
-                                                      <div data-node-view-content="">
-                                                        <div data-node-view-content-inner="paragraph">登録料・月額費用は一切かかりません。
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="react-renderer node-smartLayoutCell animatable-on-load-content-child animate-has-animated">
-                                      <div data-node-view-wrapper="">
-                                        <div class=" css-1doss8g">
-                                          <div class="css-1katrfu">
-                                            <div class="css-1d2qp1f">
-                                              <div class="css-10ul88n">
-                                                <div class="themed-html-shape-background css-iz3jdz">
-                                                  <p class="chakra-text themed-heading css-14ogru3"
-                                                    style="line-height:1"></p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="themed-shape-outside-text css-twszz0">
-                                              <div style="white-space:pre-wrap;max-width:100%;word-break:break-word"
-                                                data-node-view-content="">
-                                                <div data-node-view-content-inner="smartLayoutCell">
-                                                  <div
-                                                    class="react-renderer node-heading block block-heading first-block">
-                                                    <div
-                                                      style="white-space:normal;display:flex;flex-direction:column;align-items:var(--flex-align)"
-                                                      data-node-view-wrapper="">
-                                                      <div level="4" data-placeholder="Heading 4"
-                                                        class="heading themed-heading"
-                                                        style="white-space:pre-wrap;min-width:min(100%, 10em)"
-                                                        data-node-view-content="">
-                                                        <div data-node-view-content-inner="heading">即日公開</div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div
-                                                    class="react-renderer node-paragraph block block-paragraph last-block">
-                                                    <div data-node-view-wrapper="">
-                                                      <div data-node-view-content="">
-                                                        <div data-node-view-content-inner="paragraph">
-                                                          アップロードしたその日から作品を公開できます。</div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="react-renderer node-smartLayoutCell animatable-on-load-content-child animate-has-animated">
-                                      <div data-node-view-wrapper="">
-                                        <div class=" css-1doss8g">
-                                          <div class="css-1katrfu">
-                                            <div class="css-1d2qp1f">
-                                              <div class="css-10ul88n">
-                                                <div class="themed-html-shape-background css-iz3jdz">
-                                                  <p class="chakra-text themed-heading css-14ogru3"
-                                                    style="line-height:1"></p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="themed-shape-outside-text css-twszz0">
-                                              <div style="white-space:pre-wrap;max-width:100%;word-break:break-word"
-                                                data-node-view-content="">
-                                                <div data-node-view-content-inner="smartLayoutCell">
-                                                  <div data-pos="1360"
-                                                    class="react-renderer node-heading block block-heading first-block">
-                                                    <div
-                                                      style="white-space:normal;display:flex;flex-direction:column;align-items:var(--flex-align)"
-                                                      data-node-view-wrapper="">
-                                                      <div level="4" data-placeholder="Heading 4"
-                                                        class="heading themed-heading"
-                                                        style="white-space:pre-wrap;min-width:min(100%, 10em)"
-                                                        data-node-view-content="">
-                                                        <div data-node-view-content-inner="heading">安心サポート</div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div data-pos="1368"
-                                                    class="react-renderer node-paragraph block block-paragraph last-block">
-                                                    <div data-node-view-wrapper="">
-                                                      <div data-node-view-content="">
-                                                        <div data-node-view-content-inner="paragraph">
-                                                          24時間体制のカスタマーサポートがあなたをバックアップ。</div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="react-renderer node-smartLayoutCell animatable-on-load-content-child animate-has-animated">
-                                      <div data-node-view-wrapper="">
-                                        <div class=" css-1doss8g">
-                                          <div class="css-1katrfu">
-                                            <div class="css-1d2qp1f">
-                                              <div class="css-10ul88n">
-                                                <div class="themed-html-shape-background css-iz3jdz">
-                                                  <p class="chakra-text themed-heading css-14ogru3"
-                                                    style="line-height:1"></p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="themed-shape-outside-text css-twszz0">
-                                              <div style="white-space:pre-wrap;max-width:100%;word-break:break-word"
-                                                data-node-view-content="">
-                                                <div data-node-view-content-inner="smartLayoutCell">
-                                                  <div
-                                                    class="react-renderer node-heading block block-heading first-block">
-                                                    <div
-                                                      style="white-space:normal;display:flex;flex-direction:column;align-items:var(--flex-align)"
-                                                      data-node-view-wrapper="">
-                                                      <div level="4" data-placeholder="Heading 4"
-                                                        class="heading themed-heading"
-                                                        style="white-space:pre-wrap;min-width:min(100%, 10em)"
-                                                        data-node-view-content="">
-                                                        <div data-node-view-content-inner="heading">夢への第一歩</div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div
-                                                    class="react-renderer node-paragraph block block-paragraph last-block">
-                                                    <div data-node-view-wrapper="">
-                                                      <div data-node-view-content="">
-                                                        <div data-node-view-content-inner="paragraph">
-                                                          あなたの才能を眠らせたままにしないで。今こそチャンスです！
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <CardInnerFrame header="今すぐ始めよう！">
+    <ul class="home-end-list">
+      <li class="home-end-item">
+        <article class="home-end-item-wrapper">
+          <h3 class="home-end-header">無料登録</h3>
+          <p class="home-end-desc">登録料・月額費用は一切かかりません。</p>
+        </article>
+      </li>
+      <li class="home-end-item">
+        <article class="home-end-item-wrapper">
+          <h3 class="home-end-header">即日公開</h3>
+          <p class="home-end-desc">アップロードしたその日から作品を公開できます</p>
+        </article>
+      </li>
+      <li class="home-end-item">
+        <article class="home-end-item-wrapper">
+          <h3 class="home-end-header">安心サポート</h3>
+          <p class="home-end-desc">24時間体制のカスタマーサポートがあなたをバックアップ。</p>
+        </article>
+      </li>
+      <li class="home-end-item">
+        <article class="home-end-item-wrapper">
+          <h3 class="home-end-header">夢への第一歩</h3>
+          <p class="home-end-desc">あなたの才能を眠らせたままにしないで。今こそチャンスです！</p>
+        </article>
+      </li>
+    </ul>
+  </CardInnerFrame>
 </template>
+
+<style lang="sass" scoped>
+.home-end
+  &-list
+    display: flex
+    flex-wrap: wrap
+    padding-left: 0
+  &-item
+    list-style-type: none
+    position: relative
+    width: 50%
+    &::before
+      position: absolute
+      background-color: #f7edd4ff
+      border-radius: .35em
+      border: 1px solid #ddd3baff
+      content: ''
+      top: 0
+      bottom: 0
+      margin-top: auto
+      margin-bottom: auto
+      height: 1.875rem
+      width: 1.875rem
+  &-item-wrapper
+    padding-left: 3rem
+  &-header
+    font-size: 1.4rem
+    margin-top: 1.125rem
+  &-desc
+    font-size: 1.125rem
+</style>

@@ -10,39 +10,17 @@ import HomeTop from '@/components/home/HomeTop.vue'
 </script>
 
 <template>
-  <div class="css-ec1ch0">
-    <div class="ProseMirror">
-      <div as="div" data-testid="doc-node-root" style="white-space:normal;height:100%" data-node-view-wrapper="">
-        <link rel="stylesheet" class="chakra-link css-spn4bz"
-          href="https://fonts.googleapis.com/css2?family=DM%20Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-          data-gamma-font="DM Sans">
-        <link rel="stylesheet" class="chakra-link css-spn4bz"
-          href="https://fonts.googleapis.com/css2?family=Libre%20Baskerville:wght@400;700&amp;display=swap"
-          data-gamma-font="Libre Baskerville">
-        <div class="css-11w65sc">
-          <div class="doc-content-wrapper css-no7w9x">
-            <div data-doc-background-element="true" contenteditable="false" class="css-1m99umk">
-              <div data-testid="doc-background" class="css-1o2bb27"></div>
-            </div>
-            <div class="css-11w65sc"></div>
-            <div class="motion-present-mode-bg css-toz6i7" data-doc-background-element-present-mode="true"
-              data-export-master="true" style="opacity: 1;"></div>
-            <div class="document-content is-doc-mode css-s4p8cz">
-              <div style="white-space:pre-wrap;width:100%" data-node-view-content="">
-                <div data-node-view-content-inner="document" style="white-space:inherit">
-                  <HomeTop />
-                  <HomeStepFlow />
-                  <HomeProfit />
-                  <HomeSupport />
-                  <HomeIntroduceFunc />
-                  <HomeIntroduceGenre />
-                  <HomeSuccessStory />
-                  <HomeEnd />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="main-body">
+    <div style="white-space:pre-wrap;width:100%" data-node-view-content="">
+      <div data-node-view-content-inner="document" style="white-space:inherit">
+        <HomeTop />
+        <HomeStepFlow />
+        <HomeProfit />
+        <HomeSupport />
+        <HomeIntroduceFunc />
+        <HomeIntroduceGenre />
+        <HomeSuccessStory />
+        <HomeEnd />
       </div>
     </div>
   </div>
@@ -63,4 +41,7 @@ body
 [data-node-view-content-inner="paragraph"]:empty::after
   content: " "
 
+.main-body
+  font-size: 1.125rem
+  width: 100vw
 </style>
