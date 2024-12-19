@@ -4,11 +4,11 @@ import CardInnerFrame from '@/commons/frame/CardInnerFrame.vue'
 import HeroImage from '@/commons/HeroImage.vue'
 </script>
 <template>
-  <div class="home-top">
-    <div class="home-top-inner">
+  <div class="about-top">
+    <div class="about-top-inner">
       <HeroImage src="./src/assets/image/sample_mangaka1.jpg" back-color="black">
-        <CardInnerFrame header="漫画家になろう - あなたの才能を収益化" class="home-top-inner-frame">
-          <p class="home-top-desc">
+        <CardInnerFrame header="漫画家になろう - あなたの才能を収益化" class="about-top-inner-frame">
+          <p class="about-top-desc">
             漫画家になろうは、あなたの漫画作品を世界中のファンに届け、その人気に応じて収益を得られるプラットフォームです。<br>才能あふれる皆さま、ここで夢を叶えましょう！
           </p>
           <div class="button-wrapper">
@@ -22,14 +22,14 @@ import HeroImage from '@/commons/HeroImage.vue'
 </template>
 
 <style lang="sass" scoped>
-.home-top
+.about-top
   display: flex
   justify-content: center
 
   &-inner-frame :deep(.card-inner-frame-header)
     color: white
 
-.home-top-desc
+.about-top-desc
   color: white
   font-size: 1em
   margin-top: 1.125em
