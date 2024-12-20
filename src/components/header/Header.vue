@@ -3,12 +3,28 @@ import Account from '@/components/header/Account.vue'
 </script>
 <template>
   <header>
-    <h1>日本初の漫画投稿サイト</h1>
-    <p>漫画家応援サイト</p>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
+    <div>
+      <img />
+      <h1>
+        <RouterLink to="/">日本初の漫画投稿サイト</RouterLink>
+      </h1>
+    </div>
     <Account />
   </header>
 </template>
+
+<style lang="sass" scoped>
+header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 2.5rem
+
+h1
+  line-height: 1
+
+h1 a
+  color: black
+  font-size: 2.25rem
+  padding: 0
+</style>

@@ -169,6 +169,7 @@ const getChapter = (chapter: number) => `${chapter}章`
   &-desc-wrapper
     margin-left: 5px
     word-break: break-all
+    width: 100%
   &-title
     font-size: 1rem
     line-height: 1rem
