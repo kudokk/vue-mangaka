@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useClickOutside } from '@/commons/event/useClickOutside'
 import IconAccount from '@/components/icons/IconAccount.vue'
 
+const account = ref<HTMLElement>()
 const isOpen = ref<boolean>(false)
+const open = () => isOpen.value = true
+const close = () => isOpen.value = false
+useClickOutside(account, () => close())
 </script>
 <template>
-  <div class="account">
+  <div class="account" ref="account">
     <!-- アイコン -->
-    <buttun type="button">
-      <IconAccount class="account-icon" @click="isOpen = !isOpen" />
-    </buttun>
+    <button type="button" @click="open">
+      <IconAccount class="account-icon" />
+    </button>
     <div v-if="isOpen" class="account-dialog">
       <ul class="account-dialog-list">
         <li class="account-dialog-item account-dialog-item-has-border">
