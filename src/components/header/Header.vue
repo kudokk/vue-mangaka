@@ -6,7 +6,7 @@ import Account from '@/components/header/Account.vue'
     <div class="header-inner">
       <img src="@/assets/image/sample_logo4.ico" alt="ロゴ画像" class="logo" />
       <h1>
-        <RouterLink to="/">日本初の漫画投稿サイト</RouterLink>
+        <RouterLink to="/">漫画Paradice</RouterLink>
       </h1>
     </div>
     <Account />

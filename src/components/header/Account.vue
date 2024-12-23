@@ -20,11 +20,14 @@ useClickOutside(account, () => close())
         <li class="account-dialog-item account-dialog-item-has-border">
           <IconAccount class="account-dialog-icon" /><span>ユーザー名</span>
         </li>
+        <li class="account-dialog-item account-dialog-item-has-border">
+          <button type="button"><router-link :to="{ path: '/about' }">このサイトについて</router-link></button>
+        </li>
         <li class="account-dialog-item">
           <button type="button">閲覧履歴</button>
         </li>
         <li class="account-dialog-item account-dialog-item-has-border">
-          <button type="button">漫画投稿</button>
+          <button type="button"><router-link :to="{ path: '/manga/create' }">漫画投稿</router-link></button>
         </li>
         <li class="account-dialog-item">
           <button type="button">ログイン</button>
@@ -67,7 +70,7 @@ useClickOutside(account, () => close())
         padding-top: 5px
   &-icon
     width: 2.5rem
-  & button
+  & button, a
     background-color: transparent
     border: none
     color: #454240

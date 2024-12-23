@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HomeButton from '@/commons/button/HomeButton.vue'
+import RoundButton from '@/commons/button/RoundButton.vue'
 import CardInnerFrame from '@/commons/frame/CardInnerFrame.vue'
 import HeroImage from '@/commons/HeroImage.vue'
 </script>
@@ -12,8 +12,8 @@ import HeroImage from '@/commons/HeroImage.vue'
             漫画家になろうは、あなたの漫画作品を世界中のファンに届け、その人気に応じて収益を得られるプラットフォームです。<br>才能あふれる皆さま、ここで夢を叶えましょう！
           </p>
           <div class="button-wrapper">
-            <HomeButton class="button-left" text="今すぐ登録" />
-            <HomeButton text="詳細を見る" />
+            <RoundButton class="button-left" text="今すぐ登録" />
+            <RoundButton text="詳細を見る" />
           </div>
         </CardInnerFrame>
       </HeroImage>
