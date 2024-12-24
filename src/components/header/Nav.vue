@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { NAMES } from '@/router/name'
 import { useClickOutside } from '@/commons/event/useClickOutside'
 import IconAccount from '@/components/icons/IconAccount.vue'
+import { useRegisterModalStore } from '@/stores/registerModal'
 import { useLoginModalStore } from '@/stores/loginModal'
 
 const account = ref<HTMLElement>()
@@ -10,6 +12,7 @@ const open = () => isOpen.value = true
 const close = () => isOpen.value = false
 useClickOutside(account, () => close())
 
+const registerModalStore = useRegisterModalStore()
 const loginModalStore = useLoginModalStore()
 </script>
 <template>
@@ -24,13 +27,16 @@ const loginModalStore = useLoginModalStore()
           <IconAccount class="account-dialog-icon" /><span>ユーザー名</span>
         </li>
         <li class="account-dialog-item account-dialog-item-has-border">
-          <button type="button"><router-link :to="{ path: '/about' }">このサイトについて</router-link></button>
+          <button type="button"><router-link :to="{ name: NAMES.About }">このサイトについて</router-link></button>
         </li>
         <li class="account-dialog-item">
           <button type="button">閲覧履歴</button>
         </li>
         <li class="account-dialog-item account-dialog-item-has-border">
-          <button type="button"><router-link :to="{ path: '/manga/create' }">漫画投稿</router-link></button>
+          <button type="button"><router-link :to="{ name: NAMES.Manga.Create }">漫画投稿</router-link></button>
+        </li>
+        <li class="account-dialog-item">
+          <button type="button" @click="registerModalStore.openRegisterModal">新規ユーザー登録</button>
         </li>
         <li class="account-dialog-item">
           <button type="button" @click="loginModalStore.openLoginModal">ログイン</button>

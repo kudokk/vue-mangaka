@@ -2,9 +2,12 @@
 import { RouterView } from 'vue-router'
 import Header from '@/components/header/Header.vue'
 import Login from '@/components/account/Login.vue'
+import Register from '@/components/account/Register.vue'
 import { useLoginModalStore } from '@/stores/loginModal'
+import { useRegisterModalStore } from '@/stores/registerModal'
 
 const loginModalStore = useLoginModalStore()
+const registerModalStore = useRegisterModalStore()
 
 </script>
 
@@ -13,6 +16,7 @@ const loginModalStore = useLoginModalStore()
     <Header />
     <RouterView />
     <Login v-if="loginModalStore.isOpenLoginModal" />
+    <Register v-if="registerModalStore.isOpenRegisterModal" />
   </div>
 </template>
 
