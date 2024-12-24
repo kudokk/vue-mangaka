@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Account from '@/components/header/Account.vue'
+import Nav from '@/components/header/Nav.vue'
 </script>
 <template>
   <header>
@@ -9,7 +9,7 @@ import Account from '@/components/header/Account.vue'
         <RouterLink to="/">漫画Paradice</RouterLink>
       </h1>
     </div>
-    <Account />
+    <Nav />
   </header>
 </template>
 

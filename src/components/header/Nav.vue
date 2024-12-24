@@ -2,12 +2,15 @@
 import { ref } from 'vue'
 import { useClickOutside } from '@/commons/event/useClickOutside'
 import IconAccount from '@/components/icons/IconAccount.vue'
+import { useLoginModalStore } from '@/stores/loginModal'
 
 const account = ref<HTMLElement>()
 const isOpen = ref<boolean>(false)
 const open = () => isOpen.value = true
 const close = () => isOpen.value = false
 useClickOutside(account, () => close())
+
+const loginModalStore = useLoginModalStore()
 </script>
 <template>
   <div class="account" ref="account">
@@ -30,7 +33,7 @@ useClickOutside(account, () => close())
           <button type="button"><router-link :to="{ path: '/manga/create' }">漫画投稿</router-link></button>
         </li>
         <li class="account-dialog-item">
-          <button type="button">ログイン</button>
+          <button type="button" @click="loginModalStore.openLoginModal">ログイン</button>
         </li>
       </ul>
     </div>
